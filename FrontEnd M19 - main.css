@@ -1,0 +1,56 @@
+/* Reset e fonte padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Bloco principal */
+.produtos {
+    max-width: 640px;
+    width: 100%;
+    margin: 56px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    gap: 16px; /* espaçamento entre os itens */
+    justify-items: center; /* centraliza os itens no grid */
+}
+
+/* Elementos */
+.produtos__item {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    background-color: #fff;
+}
+
+/* Imagem */
+.produtos__imagem {
+    width: 100%;           /* ocupa a largura do item */
+    max-width: 180px;      /* limite máximo da largura */
+    height: 150px;         /* altura fixa */
+    object-fit: cover;     /* corta mantendo proporção */
+    display: block;
+    margin: 0 auto;        /* centraliza dentro do item */
+    border-radius: 4px;    /* opcional para estética */
+}
+
+/* Nome do produto */
+.produtos__item-nome {
+    font-size: 1.2em;
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+/* Descrição do produto */
+.produtos__item-descricao {
+    color: gray;
+    font-size: 0.9em;
+}
+
+/* Modificador para destaque */
+.produtos__item--destaque {
+    border: 2px solid gold;
+    background-color: #ffff42;
+}
